@@ -16,33 +16,40 @@
         <div class="login" id="displayLogin">
             <h2>Login</h2>
             <div class="username">
-                <label for="username">username</label>
-                <input type="text" class="username" placeholder="Enter username">
+                <label for="username" >username</label>
+                <input required type="text" class="username" id="username" placeholder="Enter username" >
             </div>
             <div class="password">
-                <label for="">password</label>
-                <input type="password" class="password" placeholder="Enter password">
+                <label for="password">password</label>
+                <input required type="password" class="password" id="password" placeholder="Enter password" >
             </div>
             <div class="button">
-                <button type="button" class="btn btn-primary" >Login</button>
+                <button type="button" class="btn btn-primary" id="loginDataButton" >Login</button>
             </div>
+            <div >
+                <button class="incorrect" id="incorrectDetails">Wrong Credentials!!! Please enter the correct details</button>
+            </div>
+            
         </div>
         <div class="register" id="displayRegister">
             <h2>Register</h2>
             <div class="username">
                 <label for="username">username</label>
-                <input type="text" class="username" placeholder="Enter username">
+                <input type="text" class="username" id="newUsername" placeholder="Enter username">
             </div>
             <div class="password">
                 <label for="password">password</label>
-                <input type="password" class="password" placeholder="Enter password">
+                <input type="password" class="password" id="newPassword" placeholder="Enter password">
             </div>
             <div class="email" >
                 <label for="email">email</label>
-                <input type="email" class="email" placeholder="Enter email">
+                <input type="email" class="email" id="email" placeholder="Enter email">
             </div>
             <div class="button">
-                <button type="button" class="btn btn-primary" >Register</button>
+                <button type="button" class="btn btn-primary" id="registerDataButton" >Register</button>
+            </div>
+            <div >
+                <button class="successful" id="successAlert">register successfull</button>
             </div>
         </div>
     </form>
