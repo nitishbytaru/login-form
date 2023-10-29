@@ -1,3 +1,20 @@
+*{
+    font-size: 1.2rem;
+}
 .register{
+    display: none;
+}
+.successful{
+    border: none;
+    height: 6vh;
+    background-color: #32b632;
+    color: whitesmoke;
+    display: none;
+}
+.incorrect{
+    border: none;
+    height: 6vh;
+    background-color: #ff2e2e;
+    color: whitesmoke;
     display: none;
 }
