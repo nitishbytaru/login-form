@@ -8,50 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form  >
+    <form class="form" action="#" id="login-form-login" >
         <div class="switch">
             <button type="button" class="btn btn-outline-primary" id="loginButton">Login</button>
             <button type="button" class="btn btn-outline-primary" id="registerButton">Register</button>
         </div>
         <div class="login" id="displayLogin">
-            <h2>Login</h2>
-            <div class="username">
-                <label for="username">Username</label>
-                <input required type="text" class="username" id="username"  placeholder="Enter username"  >
-            </div>
-            <div class="password">
-                <label for="password">Password</label>
-                <input required type="password" class="password" id="password"   placeholder="Enter password"  >
+            <h2 class="heading">Login</h2>
+            <div class="main">
+                <div class="username component ">
+                    <label for="username" class="label label-tag" >Username:</label>
+                    <input type="text" class="username label " id="username"  placeholder="Enter username"  >
+                </div>
+                <div class="password component ">
+                    <label for="password" class="label label-tag" >Password:</label>
+                    <input type="password" class="password label " id="password"  placeholder="Enter password"  >
+                </div>
             </div>
             <div class="button">
-                <button class="btn btn-primary" id="loginDataButton">Login</button>
+                <button type="submit" class="btn btn-primary" id="loginDataButton" >Login</button>
             </div>
-            <div>
-                <button class="incorrect" id="incorrectDetails">Details not found</button>
-            </div>
-            <div>
-                <button class="successful" id="loginSuccess">Login successful</button>
+            <div class="alerts">
+                <p class="incorrect label"  id="incorrectDetails">Details not found</p>
+                <p class="successful label "  id="loginSuccess">Login successful</p>
             </div>
         </div>
+    </form>
+    <form class="form" style="margin-top: 0rem;" action="#" id="login-form-register" >
         <div class="register" id="displayRegister">
-            <h2>Register</h2>
-            <div class="username">
-                <label for="newUsername">Username</label>
-                <input required type="text" class="username" id="newUsername"   placeholder="Enter username"  >
-            </div>
-            <div class="password">
-                <label for="newPassword">Password</label>
-                <input required type="password" class="password" id="newPassword"   placeholder="Enter password"  >
-            </div>
-            <div class="email">
-                <label for="email">Email</label>
-                <input required type="email" class="email" id="email"   placeholder="Enter email"  >
+            <h2 class="heading">Register</h2>
+            <div class="register-main">
+                <div class="username component">
+                    <label for="newUsername " class="label label-tag" >Username:</label>
+                    <input type="text" class="username label " id="newUsername"   placeholder="Enter username"  >
+                </div>
+                <div class="password component">
+                    <label for="newPassword" class="label label-tag" >Password:</label>
+                    <input type="password" class="password label " id="newPassword"   placeholder="Enter password"  >
+                </div>
+                <div class="email component">
+                    <label for="email" class="label label-tag" >Email:</label>
+                    <input type="email" class="email label " id="email"   placeholder="Enter email"  >
+                </div>
             </div>
             <div class="button">
-                <button class="btn btn-primary" id="registerDataButton">Register</button>
+                <button type="submit" class="btn btn-primary" id="registerDataButton" >Register</button>
             </div>
-            <div>
-                <button class="successful" id="successAlert">Register successful</button>
+            <div class="alerts">
+                <p class="successful label"  id="successAlert">Register successful</p>
+                <p class="incorrect label"   id="userExists">User already exists</p>
             </div>
         </div>
     </form>
