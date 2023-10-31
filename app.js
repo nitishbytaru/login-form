@@ -1,7 +1,7 @@
 
 let usernameArr=["nitish"];//these are the arrays which store the user data received while registring
 let passwordArr=["1234"];
-let emailArr=["nitishdurgab2004@gmail.com"];
+let emailArr=["nitishbytaru24@gmail.com"];
 
 let displayLogin = document.getElementById("displayLogin"); //the whole login contents
 let displayRegister = document.getElementById("displayRegister"); //the whole register contents
